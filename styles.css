@@ -1,0 +1,170 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	box-sizing: border-box;
+	font-family: serif;
+}
+
+nav {
+	width: 100%;
+	align-items: center;
+	height: 4vh;
+	padding: 10px;
+	box-shadow: 0px 2px 0px 0px rgb(155, 155, 155);
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.left {
+	background-color: #cecdcd;
+	flex: 1;
+	flex-basis: 500px;
+	padding: 30px 100px 0px 40px;
+}
+
+.left-header {
+	font-weight: 900;
+	color: #414141;
+}
+
+.left-subheader {
+	font-weight: 300;
+	color: #585859;
+}
+
+.left-image {
+	align-self: center;
+	margin: 100px 0px 80px 40px;
+}
+
+.right-header {
+	font-weight: 900;
+	color: #414141;
+}
+
+.right-subheader {
+	font-weight: 300;
+	color: #585859;
+}
+
+.right {
+	height: 96vh;
+	background-color: #fff;
+	flex: 1;
+	flex-basis: 500px;
+	align-items: center;
+	padding: 60px 10px 10px 40px;
+}
+
+.form-input {
+	margin: 30px 0px 10px 0px;
+	width: 100%;
+}
+
+input {
+	width: 100%;
+	margin: 5px 0px 5px 0px;
+	background-color: #fff;
+	border: 2px solid #beacacc0;
+	border-radius: 5px;
+	height: 30px;
+}
+
+select {
+	width: 101%;
+	margin: 5px 0px 5px 0px;
+	background-color: #fff;
+	border: 2px solid #beacacc0;
+	border-radius: 5px;
+	height: 45px;
+	padding: 10px;
+}
+
+option {
+	width: 101%;
+	margin: 5px 0px 5px 0px;
+	background-color: #fff;
+	border: 2px solid #beacacc0;
+	border-radius: 5px;
+	height: 45px;
+	padding: 10px;
+}
+
+.btn-submit {
+	margin: 5px;
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+	border: 2px solid #beacacc0;
+	background-color: #ff005b;
+	color: #fff;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+.form-helper {
+	margin: 5px;
+}
+
+.terms,
+.privacy {
+	color: #000;
+	font-weight: bold;
+}
+
+form {
+	width: 60%;
+	text-align: left;
+}
+
+label {
+	color: #000;
+	font-weight: bold;
+}
+
+.helper-text {
+	color: #535151fb;
+	font-weight: normal;
+}
+
+.body-container {
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.flex_grow {
+	flex-grow: 1;
+}
+
+.nav-header {
+	font-weight: lighter;
+}
+
+.err {
+	color: rgb(236, 65, 65);
+}
+
+.btn-signin {
+	text-decoration: none;
+	color: #111;
+	margin: 35px;
+	padding: 5px 25px 5px 25px;
+	border: 2px solid #d6dce2;
+}
+
+@media only screen and (max-width: 600px) {
+	.nav-header {
+		display: none;
+	}
+}

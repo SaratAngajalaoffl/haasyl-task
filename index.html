@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="main.js" defer></script>
+		<title>Haasyl</title>
+	</head>
+	<body>
+		<nav class="flex flex-row">
+			<img src="/assets/logo.png" alt="Haasyl" />
+			<div class="flex_grow"></div>
+			<h4 class="nav-header">Already Have an account?</h4>
+			<a href="" class="btn-signin">Sign In</a>
+		</nav>
+		<div class="flex flex-row body-container">
+			<div class="flex flex-column left">
+				<h2 class="left-header">Calculate your Earned Salary Now!</h2>
+				<h3 class="left-subheader">
+					Each day of work adds value to your company. How much does
+					it add to you? Register now to find out.
+				</h3>
+				<img
+					src="assets/mobile.png"
+					alt="mobile-img"
+					class="left-image"
+					width="300px"
+				/>
+			</div>
+			<div class="flex flex-column right">
+				<form id="form" action="/" method="GET">
+					<h1 class="right-header">Get Started</h1>
+					<h2 class="right-subheader">Please fill in the details</h2>
+					<div class="form-input">
+						<label for="firstname">First Name</label> <br />
+						<input
+							type="text"
+							name="firstname"
+							id="firstname"
+							required
+						/>
+					</div>
+					<div id="fname-err" class="err"></div>
+					<div class="form-input">
+						<label for="lastname">Last Name</label> <br />
+						<input
+							type="text"
+							name="lastname"
+							id="lastname"
+							required
+						/>
+					</div>
+					<div id="lname-err" class="err"></div>
+					<div class="form-input">
+						<label for="telnum">Mobile Number</label> <br />
+						<input type="text" name="telnum" id="telnum" required />
+						<div class="helper-text">
+							<em>
+								Note: An OTP will be sent to your number for
+								verification
+							</em>
+						</div>
+					</div>
+					<div id="tel-err" class="err"></div>
+					<div class="form-input">
+						<label for="salary"
+							>Basic Salary Per Month ( in Rupees)
+						</label>
+						<br />
+						<input
+							type="number"
+							name="salary"
+							id="salary"
+							required
+						/>
+					</div>
+					<div id="sal-err" class="err"></div>
+					<div class="form-input">
+						<label for="date">Salary Date</label> <br />
+						<select name="date" id="date">
+							<option value="Daily">Daily</option>
+							<option value="1st day of the month">
+								1st day of the month
+							</option>
+							<option value="1st day of the week">
+								1st day of the week
+							</option>
+							<option value="1st day of the year">
+								1st day of the year
+							</option>
+						</select>
+					</div>
+					<div id="date-err" class="err"></div>
+					<div class="form-input">
+						<button
+							id="btn-submit"
+							class="btn-submit"
+							type="submit"
+						>
+							Register Now
+						</button>
+					</div>
+					<div class="form-helper">
+						By registering, you agree to haasyl's
+						<a href="" class="terms">Terms of Service</a> and
+						<a href="" class="privacy">Privacy Policy</a>.
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
